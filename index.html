@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unclog it Now</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1 class="app-name">Unclog it Now</h1>
+    </div>
+  </header>
+
+  <!-- Account Creation Section -->
+  <section class="account-creation">
+    <h2>Create Account</h2>
+    <form id="accountForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Create Account</button>
+    </form>
+  </section>
+
+  <!-- Profile Setup Section -->
+  <section class="profile-setup hidden">
+    <h2>Setup Profile</h2>
+    <form id="profileForm">
+      <input type="file" id="profilePic" accept="image/*" required>
+      <input type="text" id="name" placeholder="Name" required>
+      <textarea id="bio" placeholder="Bio" required></textarea>
+      <input type="text" id="location" placeholder="Location" required>
+      <input type="date" id="birthdate" required>
+      <button type="submit">Save Profile</button>
+    </form>
+  </section>
+
+  <!-- Home Feed Section -->
+  <section class="home-feed hidden">
+    <div class="feed-container">
+      <textarea id="postContent" placeholder="Post about a clogged canal..."></textarea>
+      <button id="postButton">Post</button>
+
+      <div id="feed" class="feed"></div>
+    </div>
+  </section>
+
+  <!-- Notifications Section -->
+  <section class="notifications hidden">
+    <h2>Notifications</h2>
+    <p>No new notifications.</p>
+  </section>
+
+  <!-- Friend Requests Section -->
+  <section class="friend-requests hidden">
+    <h2>Friend Requests</h2>
+    <p>No pending requests.</p>
+  </section>
+
+  <!-- Profile Section -->
+  <section class="profile hidden">
+    <h2>Your Profile</h2>
+    <p>Profile details will be displayed here.</p>
+  </section>
+
+  <!-- Footer with Icons -->
+  <footer>
+    <div class="footer-icons">
+      <button class="icon-btn" id="homeIcon">🏠</button> <!-- Home Icon -->
+      <button class="icon-btn" id="notificationIcon">🔔</button> <!-- Notification Icon -->
+      <button class="icon-btn" id="friendRequestIcon">➕</button> <!-- Friend Request Icon -->
+      <button class="icon-btn" id="profileIcon">👤</button> <!-- Profile Icon -->
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
